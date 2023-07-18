@@ -15,35 +15,8 @@ footer, header, hgroup, menu, nav, section {
 
 /* Start Here */
 
-#mm {
-    width: 150px;
-    height: 35px;
-    background-color: #E52B5B;
-    color: white;
-    border: 0;
-    border-radius: 20px;
-    font-size: medium;
-    font-weight: 600; 
-    margin: 20px;
-}
-#kk{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin-top: 20px>;
-    }
 
-    
-.pp{
-    align-items: center;
-}
-#cc{
-    display: flex;
-    flex-direction:column;
-    gap:px ;
-    align-items: center;
 
-}
 
 
 body {
@@ -80,7 +53,7 @@ ul {
     align-items: center;
 }
 
-#hero, #services, #contact,#about {
+#hero, #services, #contact {
     max-width: 80%;
     margin: 0 auto;
     margin-top: 24px;
@@ -127,8 +100,112 @@ button {
     border-radius: 20px;
     font-size: medium;
     font-weight: 600;
+
 }
+img {
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.custon-input {
+    width: 300px;
+    border-color: #d8aab5;
+    border-radius: 20px;
+    border: 1;
+    padding-left: 10px;
+}
+
+input {
+    height: 35px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.custon-input {
+    width: 300px;
+    border-color: #d8aab5;
+    border-radius: 20px;
+    border: 1;
+    padding-left: 10px;
+}
+.services-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.service {
+    background-color: #e52b5b;
+    padding: 10px;
+    border-radius: 20px;
+    width: 33%;
+    height: 150px;
+}
+
+.service h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.service p {
+    font-size: 16px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
 
 img {
     border-radius: 20px;
+}
+@media only screen and (max-width: 768px) {
+    #hero {
+        flex-direction: column-reverse;
+    }
+    .desc {
+        width: 90%;
+    }
+    #services {
+        flex-direction: column-reverse;
+    }
+    #about {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    #contact {
+        flex-direction: column-reverse;
+    }
+    .desc {
+        width: 90%;
+    }
+    img {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1277px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+    .pp {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 416px) {
+    .yes {
+        padding-left: 20px;
+        max-width: 200px;
+}
 }
